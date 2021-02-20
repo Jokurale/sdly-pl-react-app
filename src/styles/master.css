@@ -5,7 +5,8 @@
   color: #fff;
 }
 
-body {
+body,
+html {
   background-color: #1e1c24;
   overflow: hidden;
   margin: 0;
@@ -58,11 +59,12 @@ body {
 }
 
 .jumbo-left h1 {
-  font-size: 3rem;
+  font-size: 3.3rem;
   margin-bottom: 0;
+  margin-top: 50px;
 }
 .jumbo-left h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
   margin-top: 0;
@@ -94,12 +96,17 @@ body {
   box-shadow: 10px 10px 0px 0px rgba(42, 219, 126, 1);
 }
 
+.jumbo-right {
+  flex-direction: row;
+  justify-content: center;
+}
+
 .person {
-  width: 9.375rem;
+  width: 10rem;
 }
 
 .desk {
-  width: 30rem;
+  width: 29rem;
 }
 
 .front-page-socials {
