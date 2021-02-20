@@ -8,6 +8,8 @@
 body {
   background-color: #1e1c24;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -43,6 +45,10 @@ body {
 
 .h-100 {
   height: 100vh;
+}
+
+.jumbotron {
+  padding-top: 100px;
 }
 
 .jumbo-left h1,
@@ -86,4 +92,53 @@ body {
   -webkit-box-shadow: 10px 10px 0px 0px rgba(42, 219, 126, 1);
   -moz-box-shadow: 10px 10px 0px 0px rgba(42, 219, 126, 1);
   box-shadow: 10px 10px 0px 0px rgba(42, 219, 126, 1);
+}
+
+.person {
+  width: 9.375rem;
+}
+
+.desk {
+  width: 30rem;
+}
+
+.front-page-socials {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.social-item {
+  padding: 2px;
+}
+
+.social-item svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+.social-item svg path {
+  fill: #fff;
+  transition-duration: 0.4s;
+}
+
+.social-item:hover svg path {
+  fill: rgba(42, 219, 126, 1);
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.page-front {
+  z-index: 1020;
 }
