@@ -1,30 +1,38 @@
+import decor1 from "../svgs/decor1.svg";
+import decor2 from "../svgs/decor2.svg";
+import decor3 from "../svgs/decor3.svg";
+import decor4 from "../svgs/decor4.svg";
+import decor7 from "../svgs/decor7.svg";
+
 const images = [
   {
-    src: "../svgs/decor1.svg",
+    src: decor1,
     width: 32,
     height: 32,
   },
   {
-    src: "../svgs/decor2.svg",
+    src: decor2,
     width: 32,
     height: 32,
   },
   {
-    src: "../svgs/decor3.svg",
+    src: decor3,
     width: 32,
     height: 32,
   },
   {
-    src: "../svgs/decor4.svg",
+    src: decor4,
     width: 32,
     height: 32,
   },
   {
-    src: "../svgs/decor7.svg",
+    src: decor7,
     width: 32,
     height: 32,
   },
 ];
+
+console.log(images);
 
 const config = {
   detectRetina: true,
