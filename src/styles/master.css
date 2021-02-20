@@ -7,6 +7,9 @@
 
 body {
   background-color: #1e1c24;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -27,8 +30,9 @@ body {
   cursor: pointer;
   margin-right: 1rem;
   font-family: "Segoe UI";
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition-duration: 0.5s;
+  text-transform: capitalize;
 }
 
 .navbar-item:hover {
@@ -37,4 +41,104 @@ body {
 
 .navbar-item:last-child {
   margin-right: 0;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.jumbotron {
+  padding-top: 100px;
+}
+
+.jumbo-left h1,
+.jumbo-left h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.jumbo-left h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.jumbo-left h4 {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.jumbo-left button {
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  width: 12.5rem;
+  height: 3.125rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  background-color: #5cd89f;
+  cursor: pointer;
+
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(42, 219, 126, 1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(42, 219, 126, 1);
+  box-shadow: 5px 5px 0px 0px rgba(42, 219, 126, 1);
+  transition-duration: 0.5s;
+}
+
+.jumbo-left button:hover {
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(42, 219, 126, 1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(42, 219, 126, 1);
+  box-shadow: 10px 10px 0px 0px rgba(42, 219, 126, 1);
+}
+
+.person {
+  width: 9.375rem;
+}
+
+.desk {
+  width: 30rem;
+}
+
+.front-page-socials {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.social-item {
+  padding: 2px;
+}
+
+.social-item svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+.social-item svg path {
+  fill: #fff;
+  transition-duration: 0.4s;
+}
+
+.social-item:hover svg path {
+  fill: rgba(42, 219, 126, 1);
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.page-front {
+  z-index: 1020;
 }
