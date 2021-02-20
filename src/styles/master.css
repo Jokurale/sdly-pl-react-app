@@ -1,0 +1,40 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&amp;family=Roboto:wght@400;700&amp;display=swap";
+
+* {
+  font-family: "Roboto";
+  color: #fff;
+}
+
+body {
+  background-color: #1e1c24;
+}
+
+.navbar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navbar-brand svg {
+  width: 70px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navbar-item {
+  cursor: pointer;
+  margin-right: 1rem;
+  font-family: "Segoe UI";
+  font-size: 1rem;
+  transition-duration: 0.5s;
+}
+
+.navbar-item:hover {
+  color: #5cd89f;
+}
+
+.navbar-item:last-child {
+  margin-right: 0;
+}

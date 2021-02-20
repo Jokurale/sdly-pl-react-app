@@ -1,0 +1,1 @@
+// Animations to do using .hero__left, .person and .desk
