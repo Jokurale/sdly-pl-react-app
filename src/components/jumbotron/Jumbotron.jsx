@@ -4,7 +4,7 @@ import {ReactComponent as Desk} from '../../svgs/desk.svg'
 
 export default function Jumbotron(props) {
     return (
-        <div className="container-fluid jumbotron">
+        <div className="jumbotron">
             <div className="row">
                     <div className="jumbo-left col-md-6">
                         <h1>Michał Podsiadły</h1>

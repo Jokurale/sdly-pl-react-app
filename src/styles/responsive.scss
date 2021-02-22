@@ -1,0 +1,25 @@
+@import "breakpoints";
+
+// MEDIUM
+@media (max-width: $md) {
+  .person,
+  .desk {
+    display: none;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .jumbotron {
+    padding-top: 50px;
+  }
+
+  .jumbo-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
