@@ -149,7 +149,7 @@ html,
 }
 
 .page-front {
-  z-index: 1020;
+  z-index: 1050;
 }
 
 .preloader {
@@ -172,4 +172,18 @@ html,
 
 .preloader img {
   width: 140px;
+}
+
+.page-contact {
+  z-index: 1040;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.contact-image {
+  width: 100%;
 }

@@ -1,6 +1,6 @@
 import Nav from './nav/Nav'
-import Jumbotron from './jumbotron/Jumbotron'
-import FrontPageSocials from './socials/FrontPageSocials'
+import Jumbotron from './front/Jumbotron'
+import FrontPageSocials from './front/FrontPageSocials'
 
 import { useEffect } from 'react'
 
