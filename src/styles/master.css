@@ -112,7 +112,7 @@ html,
 }
 
 .front-page-socials {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   display: flex;
@@ -171,6 +171,5 @@ html,
 }
 
 .preloader img {
-  width: 400px;
-  height: 400px;
+  width: 140px;
 }
