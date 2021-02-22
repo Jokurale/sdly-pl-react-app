@@ -1,6 +1,7 @@
 import FrontPage from "./components/FrontPage";
 import "./styles/bootstrap-grid.css";
 import "./styles/master.css";
+import "./styles/responsive.css";
 import tsConfig from "./js/tsparticles.cfg";
 
 import Particles from "react-tsparticles";
