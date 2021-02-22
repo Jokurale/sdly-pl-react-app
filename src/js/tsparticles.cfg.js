@@ -32,8 +32,6 @@ const images = [
   },
 ];
 
-console.log(images);
-
 const config = {
   detectRetina: true,
   fpsLimit: 60,
