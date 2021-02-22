@@ -5,7 +5,6 @@ export default function ContactForm() {
         <div className="form-header">
             <span>To: Michał Podsiadły &#60;contact@sdly.pl&#62;</span>
               <span>From: Curious Visitor</span>
-              <span id="contact-date"></span>
         </div>
             <form className="contact-form flex-column d-flex justify-content-center align-items-center">
                 <label htmlFor="name">

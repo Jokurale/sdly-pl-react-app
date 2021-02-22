@@ -321,7 +321,7 @@ form button:hover {
   background-image: url("../svgs/contact.svg");
   background-size: cover;
   background-position-x: 50%;
-  filter: blur(5px);
+  filter: blur(4px);
   background-repeat: no-repeat;
 }
 
