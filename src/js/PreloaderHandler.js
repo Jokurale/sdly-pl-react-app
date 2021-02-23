@@ -1,6 +1,6 @@
-import config from "../Config";
+import appConfig from "../Config";
 
-const { enabled } = config.preloader;
+const { enabled } = appConfig.preloader;
 
 export default class PreloaderHandler {
   constructor(preloaderRef) {

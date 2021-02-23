@@ -1,5 +1,5 @@
-import FrontPage from "./components/FrontPage";
-import ContactPage from "./components/ContactPage";
+import FrontPage from "./components/front/FrontPage";
+import ContactPage from "./components/contact/ContactPage";
 import Particles from "react-tsparticles";
 import Preloader from "./components/preloader/Preloader";
 import PreloaderHandler from "./js/PreloaderHandler";
@@ -7,9 +7,11 @@ import PreloaderHandler from "./js/PreloaderHandler";
 import { useRef } from "react";
 
 import tsConfig from "./js/tsparticles.cfg";
-import "./styles/bootstrap-grid.css";
-import "./styles/master.css";
-import "./styles/responsive.css";
+
+import "./Fonts.css";
+import "./App.scss";
+
+import "./AppSetup";
 
 function App() {
   const preloaderRef = useRef();

@@ -1,10 +1,10 @@
-import Nav from './nav/Nav'
-import Jumbotron from './front/Jumbotron'
-import FrontPageSocials from './front/FrontPageSocials'
+import Nav from '../nav/Nav'
+import Jumbotron from './Jumbotron'
+import FrontPageSocials from './FrontPageSocials'
 
 import { useEffect } from 'react'
 
-import config from '../Config'
+import config from '../../Config'
 
 
 export default function FrontPage(props) {

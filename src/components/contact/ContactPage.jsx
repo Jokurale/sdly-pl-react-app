@@ -1,7 +1,9 @@
-import config from '../Config'
-import ContactForm from './contact/ContactForm'
-import contactSvg from '../svgs/contact.svg'
-import xClose from '../svgs/x-close.svg'
+import config from '../../Config'
+import ContactForm from './ContactForm'
+import contactSvg from '../../svgs/contact.svg'
+import xClose from '../../svgs/x-close.svg'
+
+import "./ContactPage.scss"
 
 export default function ContactPage(props) {
     return (

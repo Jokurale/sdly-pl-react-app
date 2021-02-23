@@ -2,6 +2,8 @@ import react from "react";
 import {ReactComponent as Person} from '../../svgs/person.svg'
 import {ReactComponent as Desk} from '../../svgs/desk.svg'
 
+import "./Jumbotron.scss"
+
 export default function Jumbotron(props) {
     return (
         <div className="jumbotron">

@@ -1,4 +1,5 @@
 import preloader_svg from '../../svgs/preloader_logo3.svg'
+import "./Preloader.scss"
 
 export default function Preloader(props) {
     return (

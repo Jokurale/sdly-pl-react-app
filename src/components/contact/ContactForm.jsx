@@ -1,10 +1,11 @@
 import SubmitButton from './SubmitButton'
+import "./ContactForm.scss"
 
 export default function ContactForm() {
     return ( <div className="form-wrapper d-flex justify-content-center flex-column">
-        <div className="form-header">
-            <span>To: Michał Podsiadły &#60;contact@sdly.pl&#62;</span>
-              <span>From: Curious Visitor</span>
+        <div className="form-header d-none d-md-block">
+            <span>To: Michał Podsiadły &#60;contact@sdly.pl&#62;</span> <br />
+            <span>From: Curious Visitor</span>
         </div>
             <form className="contact-form flex-column d-flex justify-content-center align-items-center">
                 <label htmlFor="name">
