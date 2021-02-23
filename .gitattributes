@@ -2,3 +2,4 @@
 *.scss linguist-detectable=false
 *.sass linguist-detectable=false
 *.js linguist-detectable=true
+
