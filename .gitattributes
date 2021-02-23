@@ -1,4 +1,8 @@
 *.css linguist-detectable=false
 *.scss linguist-detectable=false
 *.sass linguist-detectable=false
+<<<<<<< HEAD
 *.js linguist-detectable=true
+=======
+*.js linguist-detectable=true
+>>>>>>> 6c3e63d037b9aadc8688c232c39e10fe8fbd5802
