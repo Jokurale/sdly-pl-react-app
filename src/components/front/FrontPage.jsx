@@ -4,12 +4,12 @@ import FrontPageSocials from './FrontPageSocials'
 
 import { useEffect } from 'react'
 
-import config from '../../Config'
+import appConfig from '../../Config'
 
 
 export default function FrontPage(props) {
 
-    const { delay } = config.preloader
+    const { delay } = appConfig.preloader
 
     useEffect(() => {
         props.preloaderFunc(delay);
