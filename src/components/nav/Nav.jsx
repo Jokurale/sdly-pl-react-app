@@ -1,6 +1,8 @@
 import NavbarBrand from './NavbarBrand'
 import NavbarItems from './NavbarItems'
 
+import './Nav.scss'
+
 export default function Nav(props) {
     return (
         <nav className="row navbar">

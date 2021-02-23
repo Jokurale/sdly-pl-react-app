@@ -1,6 +1,5 @@
-@import "breakpoints";
+@import "./Breakpoints.scss";
 
-// MEDIUM
 @media (max-width: $md) {
   .person,
   .desk {

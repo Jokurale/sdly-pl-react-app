@@ -1,3 +1,5 @@
+import "./NavbarItems.scss"
+
 export default function NavbarItems() {
     return (
         <div className="navbar-items d-flex justify-content-between">

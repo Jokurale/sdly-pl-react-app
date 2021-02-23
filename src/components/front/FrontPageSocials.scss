@@ -1,0 +1,30 @@
+.front-page-socials {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.social-item {
+  padding: 2px;
+}
+
+.social-item svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+.social-item svg path {
+  fill: #fff;
+  transition-duration: 0.4s;
+}
+
+.social-item:hover svg path {
+  fill: rgba(42, 219, 126, 1);
+}

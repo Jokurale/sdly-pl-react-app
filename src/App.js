@@ -1,16 +1,28 @@
-import FrontPage from "./components/FrontPage";
-import "./styles/bootstrap-grid.css";
-import "./styles/master.css";
-import "./styles/responsive.css";
+import FrontPage from "./components/front/FrontPage";
+import ContactPage from "./components/contact/ContactPage";
+import Particles from "react-tsparticles";
+import Preloader from "./components/preloader/Preloader";
+import PreloaderHandler from "./js/PreloaderHandler";
+
+import { useRef } from "react";
+
 import tsConfig from "./js/tsparticles.cfg";
 
-import Particles from "react-tsparticles";
+import "./Fonts.css";
+import "./App.scss";
+
+import "./AppSetup";
 
 function App() {
+  const preloaderRef = useRef();
+  const preloaderHandle = new PreloaderHandler(preloaderRef);
+
   return (
     <div className="App">
-      <Particles id="tsparticles" options={tsConfig} />
-      <FrontPage />
+      <Preloader forwardRef={preloaderRef} />
+      <Particles options={tsConfig} id="tsparticles" />
+      <ContactPage />
+      <FrontPage preloaderFunc={preloaderHandle.hidePreloader} />
     </div>
   );
 }
