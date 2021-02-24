@@ -23,6 +23,10 @@ function App() {
     contactPageRef.current.style.top = "100%";
   };
 
+  const showContact = () => {
+    contactPageRef.current.style.top = "0%";
+  };
+
   // End of garbage code, when removing, please remove contact page reference and action branch right to close btn in contact header
 
   return (
@@ -33,7 +37,10 @@ function App() {
         closeContactAction={closeContact}
         contactPageRef={contactPageRef}
       />
-      <FrontPage preloaderFunc={preloaderHandle.hidePreloader} />
+      <FrontPage
+        showContactPage={showContact}
+        preloaderFunc={preloaderHandle.hidePreloader}
+      />
     </div>
   );
 }
