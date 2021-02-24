@@ -1,27 +1,34 @@
-import SubmitButton from './SubmitButton'
+import {
+    AiOutlineUser as UserIcon,
+    AiOutlineMail as MailIcon,
+    AiOutlineArrowRight as ArrowRight
+} from 'react-icons/ai';
+
 import "./ContactForm.scss"
 
 export default function ContactForm() {
-    return ( <div className="form-wrapper d-flex justify-content-center flex-column">
-        <div className="form-header d-none d-md-block">
-            <span>To: Michał Podsiadły &#60;contact@sdly.pl&#62;</span> <br />
-            <span>From: Curious Visitor</span>
+    return (
+        <div className="contact-form-wrapper">
+            <div className="form-body">
+                <div className="form-group">
+                    <label htmlFor="name">
+                        <UserIcon/>
+                    </label>
+                    <input type="text" id="name" name="name" placeholder="Name"/>
+                </div>
+                <div className="form-group">
+                    <label htmlFor="email">
+                        <MailIcon />
+                    </label>
+                    <input type="text" id="email" name="email" placeholder="Email"/>
+                </div>
+                <div className="form-group">
+                    <textarea name="message" id="message" cols="30" rows="10" defaultValue="Message..."></textarea>
+                </div>
+                <button className="form-button">
+                    Submit <ArrowRight/>
+                </button>
+            </div>
         </div>
-            <form className="contact-form flex-column d-flex justify-content-center align-items-center">
-                <label htmlFor="name">
-                    Name
-                    <input type="text" name="name" id="name"/>
-                </label>
-                <label htmlFor="email">
-                    E-Mail
-                    <input type="text" name="email" id="email"/>
-                </label>
-                <label htmlFor="message">
-                    Message
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </label>
-                <SubmitButton />
-            </form>
-        </div>
-        )
+    )
 }

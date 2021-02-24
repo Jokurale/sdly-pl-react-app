@@ -1,0 +1,26 @@
+.contact-header {
+  width: 100%;
+  position: relative;
+
+  h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #1e1c24;
+    font-family: "Montserrat";
+    font-weight: normal;
+  }
+
+  .close-btn {
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    width: 2rem;
+    margin-right: 1rem;
+    transition-duration: 0.4s;
+
+    &:hover {
+      transform: rotate(-10deg);
+      cursor: pointer;
+    }
+  }
+}

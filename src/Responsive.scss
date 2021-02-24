@@ -21,4 +21,13 @@
     flex-direction: column;
     text-align: center;
   }
+
+  .page-contact {
+    background: #fff;
+    overflow: auto !important;
+  }
+
+  .contact-header h3 {
+    margin-top: 10px;
+  }
 }

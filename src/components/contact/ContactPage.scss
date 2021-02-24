@@ -1,14 +1,21 @@
 .page-contact {
-  display: none;
+  display: block;
   z-index: 1040;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
+  transition: top 0.4s ease-in-out;
   height: 100vh;
   width: 100vw;
-  background-color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 219, 126, 1) 0%,
+    rgba(92, 216, 159, 1) 100%
+  );
 }
 
-.contact-image {
-  width: 100%;
+.contact-wrapper {
+  background-color: #fff;
+  margin: 2rem 0;
+  border-radius: 2px;
 }
