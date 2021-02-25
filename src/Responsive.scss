@@ -29,5 +29,13 @@
 
   .contact-header h3 {
     margin-top: 10px;
+    padding-right: 1rem;
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .contact-header .close-btn {
+    text-anchor: middle;
+    width: 1.5rem;
   }
 }

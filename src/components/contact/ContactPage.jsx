@@ -3,17 +3,19 @@ import ContactForm from "./ContactForm"
 import ContactHeader from "./ContactHeader"
 import ContactFooter from "./ContactFooter"
 
+import PageRefs from "../../js/PageRefs"
+
 import "./ContactPage.scss"
 
-export default function ContactPage(props) {
+export default function ContactPage() {
     return (
-        <div className="page-contact" ref={props.contactPageRef}> 
+        <div className="page-contact" ref={PageRefs.getContactRef()}> 
             <div className="container">
                 <div className="row">
                     <div className="col-12">
                         <div className="contact-wrapper row">
                             <div className="col-12">
-                                <ContactHeader closeContactAction={props.closeContactAction}/>
+                                <ContactHeader/>
                             </div>
                             <div className="col-6 d-flex justify-content-center align-items-center">
                                 <ContactImage />

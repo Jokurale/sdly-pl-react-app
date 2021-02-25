@@ -2,7 +2,8 @@
   display: block;
   z-index: 1040;
   position: absolute;
-  top: 0;
+  top: 100%;
+  visibility: hidden;
   left: 0;
   transition: top 0.4s ease-in-out;
   height: 100vh;

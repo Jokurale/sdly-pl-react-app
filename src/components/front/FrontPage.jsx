@@ -18,7 +18,7 @@ export default function FrontPage(props) {
     return (
         <div className="container h-100 page-front">
             <FrontPageSocials/>
-            <Nav showContactPage={props.showContactPage}/>
+            <Nav/>
             <Jumbotron/>
         </div>
     )
