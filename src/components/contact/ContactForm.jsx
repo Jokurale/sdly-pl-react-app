@@ -1,3 +1,4 @@
+import { Component } from 'react'
 import {
     AiOutlineUser as UserIcon,
     AiOutlineMail as MailIcon,
@@ -6,29 +7,84 @@ import {
 
 import "./ContactForm.scss"
 
-export default function ContactForm() {
-    return (
+export default class ContactForm extends Component {
+
+    constructor(props) {
+
+        super(props)
+        this.state = {
+            fields: { 
+                name: "",
+                email: "",
+                message: ""
+            },
+            error: false
+        }
+    }
+
+    handleChange(e) {
+        this.setState( () => { return { fields: { ...this.state.fields, [e.target.name]: e.target.value }, error: false}})
+    }
+
+    handleSubmit(e) {        
+
+        // *** Data validation
+        for ( const [name, value] of Object.entries(this.state.fields) ) 
+        {   
+            if (value == "" || value == " ") {
+                this.setState( () => {
+                    return {
+                        ...this.state.fields,
+                        error: true
+                    }
+                } )
+
+                return;
+            }
+        }
+
+        // *** Scroll to the top to prevent buggy spalshscren displacement
+        window.scrollTo(0,0);
+
+        // *** Display success modal
+        this.props.modalAction()
+
+
+        this.setState({ fields: {
+            name: "",
+            email: "",
+            message: ""
+        }})
+    }
+
+
+    render() {
+        return (
         <div className="contact-form-wrapper">
             <div className="form-body">
                 <div className="form-group">
                     <label htmlFor="name">
                         <UserIcon/>
                     </label>
-                    <input type="text" id="name" name="name" placeholder="Name"/>
+                    <input type="text" id="name" name="name" placeholder="Name" value={this.state.fields.name} onChange={ e => this.handleChange(e) }/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">
                         <MailIcon />
                     </label>
-                    <input type="text" id="email" name="email" placeholder="Email"/>
+                    <input type="text" id="email" name="email" placeholder="Email" value={this.state.fields.email} onChange={ e => this.handleChange(e) }/>
                 </div>
                 <div className="form-group">
-                    <textarea name="message" id="message" cols="30" rows="10" defaultValue="Message..."></textarea>
+                    <textarea placeholder="Message..." name="message" id="message" cols="30" rows="10" value={this.state.fields.message} onChange={ e => this.handleChange(e) }></textarea>
                 </div>
-                <button className="form-button">
+                <button className="form-button" type="button" onClick={ e => this.handleSubmit(e) }>
                     Submit <ArrowRight/>
                 </button>
             </div>
+            <div className="form-errors">
+            { this.state.error ? "Data is invalid" : "" }
+            </div>
         </div>
-    )
+        )
+    }
 }

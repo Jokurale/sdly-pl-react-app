@@ -5,11 +5,30 @@ import ContactFooter from "./ContactFooter"
 
 import PageRefs from "../../js/PageRefs"
 
+import Modal from './Modal'
+
+import gsap from 'gsap'
+
+import { createRef } from 'react'
+
 import "./ContactPage.scss"
 
+
 export default function ContactPage() {
+
+    const modalRef = createRef()
+
+    function displayModal() { 
+        const tl = gsap.timeline({defaults: {ease: 'power2.easeInOut'}})
+
+        const modal = modalRef.current
+
+        tl.fromTo(modal, {autoAlpha: 0}, {autoAlpha: 1}).to(modal, {delay: 1, autoAlpha: 0})
+    }
+
     return (
-        <div className="page-contact" ref={PageRefs.getContactRef()}> 
+        <div className="page-contact" ref={PageRefs.getContactRef()}>
+            <Modal forwardRef={modalRef}/>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -21,7 +40,7 @@ export default function ContactPage() {
                                 <ContactImage />
                             </div>
                             <div className="col-12 col-md-6">
-                                <ContactForm />
+                                <ContactForm modalAction={displayModal}/>
                             </div>
                             <div className="col-12">
                                 <ContactFooter />
