@@ -28,8 +28,8 @@ export default function ContactPage() {
 
     return (
         <div className="page-contact" ref={PageRefs.getContactRef()}>
-            <Modal forwardRef={modalRef}/>
             <div className="container">
+            <Modal forwardRef={modalRef}/>
                 <div className="row">
                     <div className="col-12">
                         <div className="contact-wrapper row">
