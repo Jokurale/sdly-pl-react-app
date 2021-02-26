@@ -18,12 +18,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Montserrat";
-    color: #332b3b;
-    text-align: center;
     width: 100%;
     background-color: #fff;
     height: 5rem;
-    font-size: 1.15rem;
+
+    .modal-error,
+    .modal-spinner {
+      visibility: hidden;
+      opacity: 0;
+      display: none;
+    }
+
+    .modal-error,
+    .modal-success {
+      visibility: visible;
+      width: 100%;
+      font-size: 1.15rem;
+      text-align: center;
+      font-family: "Montserrat";
+      color: #332b3b;
+    }
   }
 }

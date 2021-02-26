@@ -8,7 +8,6 @@ import {
 import "./ContactForm.scss"
 
 export default class ContactForm extends Component {
-
     constructor(props) {
 
         super(props)
@@ -22,11 +21,30 @@ export default class ContactForm extends Component {
         }
     }
 
+    async postMessage(data = {}) {
+        try { 
+            const response = await fetch(`${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}`, {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${process.env.REACT_APP_API_KEY}`,
+            },
+            body: JSON.stringify(data)
+            });
+
+            return response.json();
+        }
+        catch {
+            //
+        }
+      }
+
     handleChange(e) {
         this.setState( () => { return { fields: { ...this.state.fields, [e.target.name]: e.target.value }, error: false}})
     }
 
-    handleSubmit(e) {        
+    async handleSubmit(e) {        
 
         // *** Data validation
         for ( const [name, value] of Object.entries(this.state.fields) ) 
@@ -49,7 +67,13 @@ export default class ContactForm extends Component {
         // *** Display success modal
         this.props.modalAction()
 
+        const response = await this.postMessage({
+            name: this.state.fields.name,
+            email: this.state.fields.email,
+            message: this.state.fields.message
+        })
 
+        // *** Empty all the fields
         this.setState({ fields: {
             name: "",
             email: "",

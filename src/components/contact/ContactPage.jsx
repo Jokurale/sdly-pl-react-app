@@ -18,6 +18,7 @@ export default function ContactPage() {
 
     const modalRef = createRef()
 
+
     function displayModal() { 
         const tl = gsap.timeline({defaults: {ease: 'power2.easeInOut'}})
 

@@ -1,6 +1,6 @@
 const config = {
   preloader: {
-    enabled: true,
+    enabled: false,
     delay: 3000,
   },
 
