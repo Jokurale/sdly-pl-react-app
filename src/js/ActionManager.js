@@ -4,20 +4,21 @@ import gsap from "gsap";
 export default new (class ActionManager {
   constructor() {
     this.pageRefs = { ...PageRefsClass.refs };
-    this.showContactPage = this.showContactPage.bind(this);
-    this.hideContactPage = this.hideContactPage.bind(this);
 
     this.duringAnimation = false;
+
+    this.showPage = this.showPage.bind(this);
+    this.hidePage = this.hidePage.bind(this);
   }
 
-  showContactPage() {
+  showPage(type) {
     if (!this.duringAnimation) {
       this.duringAnimation = true;
 
-      gsap.to(this.pageRefs.contact.current, {
+      gsap.to(this.pageRefs[type].current, {
         autoAlpha: 1,
         top: 0,
-        ease: "power2.easeIn",
+        ease: "power2.easeInOut",
         onComplete: () => {
           this.duringAnimation = false;
         },
@@ -25,10 +26,10 @@ export default new (class ActionManager {
     }
   }
 
-  hideContactPage(e) {
-    const contact = this.pageRefs.contact.current;
+  hidePage(type) {
+    const page = this.pageRefs[type].current;
     const tl = new gsap.timeline({
-      defaults: { ease: "power2.easeOut" },
+      defaults: { ease: "power2.easeInOut" },
       onComplete: () => {
         this.duringAnimation = false;
       },
@@ -37,11 +38,10 @@ export default new (class ActionManager {
     if (!this.duringAnimation) {
       this.duringAnimation = true;
 
-      tl.to(contact, {
-        top: "100%",
-      }).to(contact, {
+      tl.to(page, {
+        top: "120vh",
+      }).to(page, {
         autoAlpha: 0,
-        delay: 1,
       });
     }
   }

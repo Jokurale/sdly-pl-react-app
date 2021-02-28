@@ -1,5 +1,7 @@
 import FrontPage from "./components/front/FrontPage";
 import ContactPage from "./components/contact/ContactPage";
+import ProjectsPage from "./components/projects/ProjectsPage";
+
 import Particles from "react-tsparticles";
 import Preloader from "./components/preloader/Preloader";
 import PreloaderHandler from "./js/PreloaderHandler";
@@ -21,6 +23,7 @@ function App() {
     <div className="App">
       <Preloader forwardRef={preloaderRef} />
       <Particles options={tsConfig} id="tsparticles" />
+      <ProjectsPage />
       <ContactPage />
       <FrontPage preloaderFunc={preloaderHandle.hidePreloader} />
     </div>

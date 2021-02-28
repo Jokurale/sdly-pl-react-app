@@ -1,0 +1,16 @@
+.projects-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.latest-projects {
+  .fetch-error {
+    width: 100%;
+    color: #1e1c24;
+    text-align: center;
+    padding: 1rem 0.2rem 5rem 0.2rem;
+    font-family: "Consolas";
+  }
+}

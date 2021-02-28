@@ -24,7 +24,6 @@
 
   .page-contact {
     background: #fff;
-    overflow: auto !important;
   }
 
   .contact-header h3 {
@@ -36,6 +35,11 @@
 
   .contact-header .close-btn {
     text-anchor: middle;
-    width: 1.5rem;
+  }
+
+  .projects-footer {
+    img {
+      width: 60%;
+    }
   }
 }

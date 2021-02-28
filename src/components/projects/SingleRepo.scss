@@ -1,0 +1,33 @@
+.single-repo {
+  margin: 2rem 1rem;
+  .repo-header {
+    margin-bottom: 0.6rem;
+
+    a {
+      color: #1e1c24;
+      font-family: "Consolas", "Montserrat";
+      text-decoration: none;
+      font-size: 1.3rem;
+    }
+    svg {
+      vertical-align: middle;
+      fill: #5cd89f;
+    }
+  }
+  .repo-body {
+    color: #5cd89f;
+    font-family: "Montserrat";
+    margin-bottom: 0.5rem;
+    text-align: justify;
+  }
+
+  .repo-footer {
+    color: #c9c9c9;
+    font-family: "Montserrat";
+  }
+
+  &:first-child {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+}
