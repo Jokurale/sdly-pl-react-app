@@ -1,0 +1,38 @@
+.aboutme-cards {
+  width: 100%;
+  padding: 1rem;
+  .aboutme-story {
+    .aboutme-item {
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 1.3rem;
+      b,
+      i {
+        color: inherit;
+      }
+
+      i {
+        cursor: pointer;
+      }
+
+      a {
+        color: inherit;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      &:nth-child(even) {
+        color: #1e1c24;
+      }
+
+      &:nth-child(odd) {
+        color: #5cd89f;
+      }
+    }
+  }
+
+  img {
+    width: 20%;
+  }
+}

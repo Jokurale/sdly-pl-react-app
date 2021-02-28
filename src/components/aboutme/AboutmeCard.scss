@@ -1,0 +1,11 @@
+.aboutme-card {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  img {
+    padding: 0 1rem;
+    margin: auto;
+  }
+}

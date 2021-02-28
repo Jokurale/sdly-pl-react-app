@@ -1,0 +1,15 @@
+.aboutme-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: rgb(224, 224, 224);
+  font-style: italic;
+  font-family: Consolas;
+  img {
+    margin: auto;
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+}
