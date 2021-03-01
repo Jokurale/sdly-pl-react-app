@@ -1,11 +1,10 @@
-import react from "react";
 import {ReactComponent as Person} from '../../svgs/person.svg'
 import {ReactComponent as Desk} from '../../svgs/desk.svg'
 
 import "./Jumbotron.scss"
 import ActionManager from "../../js/ActionManager";
 
-export default function Jumbotron(props) {
+export default function Jumbotron() {
     return (
         <div className="jumbotron">
             <div className="row">

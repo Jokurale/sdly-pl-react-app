@@ -1,4 +1,3 @@
-import react from 'react'
 import {ReactComponent as Brand} from '../../svgs/logo.svg'
 
 import "./NavbarBrand.scss"

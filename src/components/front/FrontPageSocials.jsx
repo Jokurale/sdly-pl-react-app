@@ -1,5 +1,3 @@
-import react from 'react'
-
 import { ReactComponent as GithubLogo } from '../../svgs/github.svg'
 import { ReactComponent as TwitterLogo } from '../../svgs/twitter.svg'
 import { ReactComponent as LinkedInLogo } from '../../svgs/linkedin.svg'
