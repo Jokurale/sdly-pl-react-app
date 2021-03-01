@@ -4,15 +4,11 @@ import FrontPageSocials from './FrontPageSocials'
 
 import { useEffect } from 'react'
 
-import appConfig from '../../Config'
-
-
-export default function FrontPage(props) {
-
-    const { delay } = appConfig.preloader
+export default function FrontPage({dispatch}) {
 
     useEffect(() => {
-        props.preloaderFunc(delay);
+        // If comonent did mount, dispatch ready state to preloader handler
+        dispatch()
     }, [])
 
     return (

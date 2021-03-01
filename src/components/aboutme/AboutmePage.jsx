@@ -3,9 +3,16 @@ import PageRefs from "../../js/PageRefs"
 import AboutmeHeader from "./AboutmeHeader"
 import AboutmeBody from "./AboutmeBody"
 
+import { useEffect } from 'react'
+
 import "./AboutmePage.scss"
 
-export default function AboutmePage() {
+export default function AboutmePage({dispatch}) {
+
+    useEffect(() => {
+        // If comonent did mount, dispatch ready state to preloader handler
+        dispatch()
+    }, [])
 
     return (
         <div className="page-aboutme" ref={PageRefs.getAboutmeRef()}>

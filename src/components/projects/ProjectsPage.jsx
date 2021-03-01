@@ -6,7 +6,14 @@ import ProjectsFooter from "./ProjectsFooter"
 
 import "./ProjectsPage.scss"
 
-export default function ContactPage() {
+import { useEffect } from 'react'
+
+export default function ContactPage({dispatch}) {
+
+    useEffect(() => {
+        // If comonent did mount, dispatch ready state to preloader handler
+        dispatch()
+    }, [])
 
     return (
         <div className="page-projects" ref={PageRefs.getProjectsRef()}>

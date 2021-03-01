@@ -24,10 +24,10 @@ function App() {
     <div className="App">
       <Preloader forwardRef={preloaderRef} />
       <Particles options={tsConfig} id="tsparticles" />
-      <AboutmePage />
-      <ProjectsPage />
-      <ContactPage />
-      <FrontPage preloaderFunc={preloaderHandle.hidePreloader} />
+      <AboutmePage dispatch={preloaderHandle.dispatchReady} />
+      <ProjectsPage dispatch={preloaderHandle.dispatchReady} />
+      <ContactPage dispatch={preloaderHandle.dispatchReady} />
+      <FrontPage dispatch={preloaderHandle.dispatchReady} />
     </div>
   );
 }

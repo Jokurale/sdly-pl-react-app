@@ -9,15 +9,20 @@ import Modal from './Modal'
 
 import gsap from 'gsap'
 
-import { createRef } from 'react'
+import { createRef, useEffect } from 'react'
 
 import "./ContactPage.scss"
 
 
-export default function ContactPage() {
+export default function ContactPage({dispatch}) {
+
+    useEffect(() => {
+        // If comonent did mount, dispatch ready state to preloader handler
+        dispatch()
+    }, [])
+
 
     const modalRef = createRef()
-
 
     function displayModal() { 
         const tl = gsap.timeline({defaults: {ease: 'power2.easeInOut'}})
