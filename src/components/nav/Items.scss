@@ -1,0 +1,18 @@
+.Navbar__Items {
+  &--item {
+    cursor: pointer;
+    margin-right: 1rem;
+    font-family: "Segoe UI";
+    font-size: 1.1rem;
+    transition-duration: 0.5s;
+    text-transform: capitalize;
+  }
+
+  &--item:hover {
+    color: #5cd89f;
+  }
+
+  &--item:last-child {
+    margin-right: 0;
+  }
+}

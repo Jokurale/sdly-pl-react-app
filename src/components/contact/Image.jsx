@@ -1,10 +1,10 @@
 import contactImage from '../../svgs/contact-sub.svg'
 
-import "./ContactImage.scss"
+import "./Image.scss"
 
-export default function ContactImage() {
+export default function Image() {
     return (
-        <div className="contact-image d-none d-md-block">
+        <div className="Contact__Image d-none d-md-block">
             <img src={contactImage} alt="Contact image"/>
         </div>
     )

@@ -1,6 +1,6 @@
-.single-repo {
+.SingleRepo {
   margin: 2rem 1rem;
-  .repo-header {
+  .SingleRepo__Header {
     margin-bottom: 0.6rem;
 
     a {
@@ -14,14 +14,14 @@
       fill: #5cd89f;
     }
   }
-  .repo-body {
+  .SingleRepo__Body {
     color: #5cd89f;
     font-family: "Montserrat";
     margin-bottom: 0.5rem;
     text-align: justify;
   }
 
-  .repo-footer {
+  .SingleRepo__Footer {
     color: #c9c9c9;
     font-family: "Montserrat";
   }

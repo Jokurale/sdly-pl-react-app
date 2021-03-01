@@ -1,7 +1,7 @@
-import ContactImage from "./ContactImage"
-import ContactForm from "./ContactForm"
-import ContactHeader from "./ContactHeader"
-import ContactFooter from "./ContactFooter"
+import Image from "./Image"
+import Form from "./Form"
+import Header from "./Header"
+import Footer from "./Footer"
 
 import PageRefs from "../../js/PageRefs"
 
@@ -11,10 +11,10 @@ import gsap from 'gsap'
 
 import { createRef, useEffect } from 'react'
 
-import "./ContactPage.scss"
+import "./Page.scss"
 
 
-export default function ContactPage({dispatch}) {
+export default function Page({dispatch}) {
 
     useEffect(() => {
         // If comonent did mount, dispatch ready state to preloader handler
@@ -33,23 +33,23 @@ export default function ContactPage({dispatch}) {
     }
 
     return (
-        <div className="page-contact" ref={PageRefs.getContactRef()}>
+        <div className="Page__Contact" ref={PageRefs.getContactRef()}>
             <div className="container">
             <Modal forwardRef={modalRef}/>
                 <div className="row">
                     <div className="col-12">
-                        <div className="contact-wrapper row">
+                        <div className="Contact__Wrapper row">
                             <div className="col-12">
-                                <ContactHeader/>
+                                <Header />
                             </div>
                             <div className="col-6 d-flex justify-content-center align-items-center">
-                                <ContactImage />
+                                <Image />
                             </div>
                             <div className="col-12 col-md-6">
-                                <ContactForm modalAction={displayModal}/>
+                                <Form modalAction={displayModal}/>
                             </div>
                             <div className="col-12">
-                                <ContactFooter />
+                                <Footer />
                             </div>
                         </div>
                     </div>

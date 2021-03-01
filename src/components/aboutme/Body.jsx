@@ -11,13 +11,13 @@ export default function AboutmeBody() {
                 Native polish. Advanced english speaker. German language isn't my specialty.
             </Accordion>
 
-            <Accordion title="Intrests and hobbies">
+            <Accordion title="Intrests">
                 Obviosuly programming. Despite that - I play drums, at least I try not to get my ass kicked out of the house. Sci-fi books and topics are on the second place. <br/> I'm also familiar with car mechanics and detailing, in some way. <br/> From time to time I like to get in touch with Adobe XD and desing some sketchy things like this app's theme. <br/>
                 <i>Simplicity is dominating, isn't it?</i>
             </Accordion>
 
             
-            <Accordion title="When it comes to programming">
+            <Accordion title="Programming">
                 SOLID principles, DRY, KISS, YAGNI, Clean Code at all costs. <br/> Constant Refactoring, trying to comment my code as good as I can. <br/>
                 <i>We all know how it is.</i>
             </Accordion>
@@ -58,7 +58,7 @@ export default function AboutmeBody() {
                 <i>Another resolved ticket. Now's lunchtime</i>
             </Accordion>
 
-            <Accordion title="On-going todo's for 2k21">
+            <Accordion title="2k21 Todo's">
                 TypeScript, GoLang, Python, Flutter, Dart, GraphQL. <br/>
                 Redux and some frameworks such as Django are already included. <br/>
                 Starting with AWS, mastering GCP. <br/>

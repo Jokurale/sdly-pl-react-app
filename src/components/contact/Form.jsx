@@ -5,11 +5,10 @@ import {
     AiOutlineArrowRight as ArrowRight
 } from 'react-icons/ai';
 
-import "./ContactForm.scss"
+import "./Form.scss"
 
-export default class ContactForm extends Component {
+export default class Form extends Component {
     constructor(props) {
-
         super(props)
         this.state = {
             fields: { 
@@ -87,28 +86,28 @@ export default class ContactForm extends Component {
 
     render() {
         return (
-        <div className="contact-form-wrapper">
-            <div className="form-body">
-                <div className="form-group">
+        <div className="Contact__FormWrapper">
+            <div className="Contact__FormBody">
+                <div className="Form__Group">
                     <label htmlFor="name">
                         <UserIcon/>
                     </label>
                     <input type="text" id="name" name="name" placeholder="Name" value={this.state.fields.name} onChange={ e => this.handleChange(e) }/>
                 </div>
-                <div className="form-group">
+                <div className="Form__Group">
                     <label htmlFor="email">
                         <MailIcon />
                     </label>
                     <input type="text" id="email" name="email" placeholder="Email" value={this.state.fields.email} onChange={ e => this.handleChange(e) }/>
                 </div>
-                <div className="form-group">
+                <div className="Form__Group">
                     <textarea placeholder="Message..." name="message" id="message" cols="30" rows="10" value={this.state.fields.message} onChange={ e => this.handleChange(e) }></textarea>
                 </div>
-                <button className="form-button" type="button" onClick={ e => this.handleSubmit(e) }>
+                <button className="Form__Button" type="button" onClick={ e => this.handleSubmit(e) }>
                     Submit <ArrowRight/>
                 </button>
             </div>
-            <div className="form-errors">
+            <div className="Form__Errors">
             { this.state.error ? "Data is invalid" : "" }
             </div>
         </div>

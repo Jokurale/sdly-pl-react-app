@@ -1,6 +1,6 @@
-import FrontPage from "./components/front/FrontPage";
-import ContactPage from "./components/contact/ContactPage";
-import ProjectsPage from "./components/projects/ProjectsPage";
+import FrontPage from "./components/front/Page";
+import ContactPage from "./components/contact/Page";
+import ProjectsPage from "./components/projects/Page";
 import AboutmePage from "./components/aboutme/Page";
 
 import Particles from "react-tsparticles";

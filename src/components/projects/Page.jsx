@@ -1,14 +1,14 @@
 import PageRefs from "../../js/PageRefs"
 
-import ProjectsHeader from "./ProjectsHeader"
-import ProjectsBody from "./ProjectsBody"
-import ProjectsFooter from "./ProjectsFooter"
+import Header from "./Header"
+import Body from "./Body"
+import Footer from "./Footer"
 
-import "./ProjectsPage.scss"
+import "./Page.scss"
 
 import { useEffect } from 'react'
 
-export default function ContactPage({dispatch}) {
+export default function Page({dispatch}) {
 
     useEffect(() => {
         // If comonent did mount, dispatch ready state to preloader handler
@@ -16,23 +16,23 @@ export default function ContactPage({dispatch}) {
     }, [])
 
     return (
-        <div className="page-projects" ref={PageRefs.getProjectsRef()}>
+        <div className="Page__Projects" ref={PageRefs.getProjectsRef()}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <ProjectsHeader/>
+                        <Header/>
                     </div>
                 </div>
 
                 <div className="row">
                     <div className="col-12">
-                        <ProjectsBody/>
+                        <Body/>
                     </div>
                 </div>
 
                 <div className="row">
                     <div className="col-12">
-                        <ProjectsFooter/>
+                        <Footer/>
                     </div>
                 </div>
             </div>

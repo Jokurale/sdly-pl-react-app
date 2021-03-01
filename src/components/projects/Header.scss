@@ -1,22 +1,16 @@
-.contact-header {
-  width: 100%;
-  position: relative;
-
+.Projects__Header {
   h3 {
+    color: #302533;
     font-family: "Montserrat";
     font-size: 2rem;
     padding-left: 1rem;
-    font-weight: bold;
-    text-align: center;
-    color: #302533;
-    font-family: "Montserrat";
   }
 
   .close-btn {
     position: absolute;
     right: 0;
     width: 2rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     transition-duration: 0.4s;
 
     &:hover {

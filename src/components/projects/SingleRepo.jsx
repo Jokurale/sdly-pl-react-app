@@ -2,8 +2,8 @@ import "./SingleRepo.scss"
 
 import { GoRepo as RepoIcon } from 'react-icons/go'
 
-export default function SingleRepo(props) {
-    const { full_name, html_url, language, license, description } = props.repo
+export default function SingleRepo({repo}) {
+    const { full_name, html_url, language, license, description } = repo
 
     let license_name = "MIT License"
 
@@ -12,12 +12,15 @@ export default function SingleRepo(props) {
     }
 
     return (
-        <div className="single-repo">
-            <div className="repo-header">
-                <span className="header-decor">	<RepoIcon /> </span>
-                <a href={html_url}>{full_name}</a></div>
-            <div className="repo-body">{description}</div>
-            <div className="repo-footer">{language} | {license_name}</div>
+        <div className="SingleRepo">
+            <div className="SingleRepo__Header">
+                <span className="SingleRepo__Header--decor">
+                    <RepoIcon />
+                </span>
+                 <a href={html_url}>{full_name}</a>
+            </div>
+            <div className="SingleRepo__Body">{description}</div>
+            <div className="SingleRepo__Footer">{language} | {license_name}</div>
         </div>
     )
 }

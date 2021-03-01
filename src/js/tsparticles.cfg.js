@@ -134,7 +134,7 @@ const config = {
         area: 800,
       },
       limit: 0,
-      value: 20,
+      value: 12,
     },
     opacity: {
       animation: {

@@ -1,0 +1,82 @@
+.Contact__FormWrapper {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Contact__FormBody {
+  width: 70%;
+}
+
+.Form {
+  &__Group {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      margin: auto 0;
+      width: 100%;
+      display: inline-block;
+      background-color: #eff0f1;
+      outline: none;
+      border: none;
+      padding: 0.8rem 0.8rem 0.8rem 0.3rem;
+      color: #9a99aa;
+
+      &::placeholder {
+        color: #9a99aa;
+        font-family: "Montserrat";
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 6rem;
+      background-color: #eff0f1;
+      outline: none;
+      border: none;
+      padding: 0.5rem;
+      color: #9a99aa;
+      resize: none;
+      font-family: "Montserrat";
+    }
+
+    label {
+      background-color: #f3f4f6;
+      height: 100%;
+      padding: 0.8rem;
+      svg {
+        fill: #9a99aa;
+      }
+    }
+  }
+
+  &__Button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    margin-bottom: 2rem;
+    background-color: #332b3b;
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+    transition-duration: 0.4s;
+
+    svg {
+      vertical-align: middle;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: #3f3549;
+    }
+  }
+  &__Errors {
+    color: #332b3b;
+    height: 1rem;
+  }
+}

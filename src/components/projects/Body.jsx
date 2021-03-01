@@ -1,9 +1,9 @@
 import LatestProjects from "./LatestProjects"
-import "./ProjectsBody.scss"
+import "./Body.scss"
 
-export default function ProjectsBody() { 
+export default function Body() { 
     return (
-        <div className="projects-body">
+        <div className="Projects__Body">
             <LatestProjects />
         </div>
     )

@@ -31,23 +31,23 @@ export default class LatestCommits extends Component {
         render() {
             if (this.state.isLoading) {
                 return (
-                    <div className="latest-projects">
-                        <div className="projects-loader"><Loader size={10} color={"#302533"}loading/></div> 
+                    <div className="LatestProjects">
+                        <div className="LatestProjects__Loader"><Loader size={10} color={"#302533"}loading/></div> 
                     </div>
                 )
             }
 
             if (this.state.data) {
 
-                return <div className="latest-projects">
+                return <div className="LatestProjects">
                     {this.state.data.map( (repo, i) => {return (<SingleRepo key={i} repo={repo}/>) })}
                 </div>
 
             }
 
             if (this.state.error) {
-                return <div className="latest-projects">
-                    <div className="fetch-error">App could not retrive github repos <br/>:(</div>
+                return <div className="LatestProjects">
+                    <div className="LatestProjects__Error">App could not retrive github repos <br/>:(</div>
                 </div>
             }
         }

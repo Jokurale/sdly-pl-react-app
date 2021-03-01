@@ -4,9 +4,9 @@ import './Modal.scss'
 
 export default function Modal({forwardRef}) {
     return (
-        <div className="modal" ref={forwardRef}>
-            <div className="modal-body">
-                <div className="modal-success">Message has been sent!</div>
+        <div className="Modal" ref={forwardRef}>
+            <div className="Modal__Body">
+                <div className="Modal__Body--success">Message has been sent!</div>
             </div>
         </div>
     )

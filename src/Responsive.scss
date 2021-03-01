@@ -6,45 +6,43 @@
     display: none;
   }
 
-  .navbar {
+  .Jumbotron {
+    padding-top: 50px;
+    &__Left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .Navbar {
     padding: 10px 20px;
   }
 
-  .jumbotron {
-    padding-top: 50px;
-  }
-
-  .jumbo-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .page-contact {
+  .Page__Contact {
     background: #fff;
   }
 
-  .contact-header h3 {
+  .Contact__Header h3 {
     margin-top: 10px;
     padding-right: 1rem;
     font-size: 1.6rem;
     text-align: left;
   }
 
-  .contact-header .close-btn {
+  .Contact__Header .close-btn {
     text-anchor: middle;
   }
 
-  .projects-footer {
+  .Projects__Footer {
     img {
       width: 60%;
     }
   }
-  .aboutme-card {
-    img {
-      width: 80%;
-    }
+
+  .Aboutme__AccordionBody {
+    text-align: justify;
   }
 }

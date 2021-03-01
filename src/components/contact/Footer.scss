@@ -1,0 +1,32 @@
+.Contact__Footer {
+  width: 100%;
+  text-align: center;
+  text-align: center;
+  color: #1e1c24;
+  font-family: "Montserrat";
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.25rem;
+
+  &--item {
+    padding: 5px;
+    margin: 0 10px;
+
+    &:hover svg path {
+      fill: rgba(42, 219, 126, 1);
+    }
+
+    svg {
+      width: 1.8rem;
+      height: 1.8rem;
+      cursor: pointer;
+
+      path {
+        fill: #302533;
+        transition-duration: 0.4s;
+      }
+    }
+  }
+}
