@@ -1,7 +1,7 @@
 import FrontPage from "./components/front/FrontPage";
 import ContactPage from "./components/contact/ContactPage";
 import ProjectsPage from "./components/projects/ProjectsPage";
-import AboutmePage from "./components/aboutme/AboutmePage";
+import AboutmePage from "./components/aboutme/Page";
 
 import Particles from "react-tsparticles";
 import Preloader from "./components/preloader/Preloader";

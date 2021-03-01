@@ -1,0 +1,64 @@
+.Aboutme__Accordion {
+  padding: 18px;
+  width: 100%;
+  outline: none;
+
+  .Aboutme__AccordionHeader {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    button {
+      height: 2rem;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: #000000;
+      font-family: "Montserrat";
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition-duration: 0.3s;
+    }
+
+    &:hover button {
+      color: #2adb7e;
+    }
+
+    .Aboutme__AccordionHeaderDropDown {
+      transition-duration: 0.4s;
+
+      svg {
+        fill: #2adb7e;
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+  }
+}
+
+.Aboutme__AccordionBody {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+
+  color: #332b3b;
+  font-family: "Montserrat";
+
+  i {
+    color: #e0e0e0;
+    font-family: Consolas;
+    font-size: 0.9em;
+  }
+}
+
+.active {
+  max-height: 40vh;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
