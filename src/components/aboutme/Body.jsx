@@ -35,7 +35,7 @@ export default function AboutmeBody() {
                 Know how web-data flows and how potential request looks like. <br/>
                 Touched some compiled languages such as Rust and C++ - WebAssembly is coming. <br/>
                 Know Python, PHP and JavaScript. <br/>
-                Using Node.js and Express.js with various packages (helmet, joi, bcrypt, jwt) daily. <br/>
+                Using Node.js and Express.js with various packages daily. <br/>
                 Mostly using cloud version of MongoDB for data-storage purposes. <br/> 
                 Know how to use MySQL with PHPMyAdmin. <br/>
                 Minor knowledge about PostgreSQL. <br/>
@@ -62,9 +62,9 @@ export default function AboutmeBody() {
                 TypeScript, GoLang, Python, Flutter, Dart, GraphQL. <br/>
                 Redux and some frameworks such as Django are already included. <br/>
                 Starting with AWS, mastering GCP. <br/>
-                Educate more about applications security and way data flows. <br/>
+                Educate more about applications security. <br/>
                 Get used to caching. <br/>
-                Place emphasis on application testing and approach before even writing. first lines of code. <br/>
+                Place emphasis on application testing and approach before even writing first lines of code. <br/>
                 Master authorization techniques such as JWT and OAuth. <br/>
                 Get on well with CI/CD and other devops. <br/>
                 <i>I know that's a lot. But who cares.</i>

@@ -63,7 +63,7 @@ export default class Form extends Component {
             }
         }
 
-        // *** Scroll to the top to prevent buggy spalshscren displacement
+        // *** Scroll to the top to prevent buggy spalshscreen displacement
         window.scrollTo(0,0);
 
         // *** Display success modal
