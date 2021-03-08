@@ -1,5 +1,5 @@
-# sdly.pl (inactive) website
+# sdly.pl (active) website
 
 ## React-based personal website.
 
-### Available soon at [sdly.pl](https://sdly.pl)
+### Available at [sdly.pl](https://sdly.pl)
