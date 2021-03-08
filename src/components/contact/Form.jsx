@@ -48,9 +48,6 @@ export default class Form extends Component {
         // *** Data validation
         for ( const [name, value] of Object.entries(this.state.fields) ) 
         {   
-        
-            console.log(value.length);
-
             if (value == "" || value == " " || value.length >= 480 || value.length < 0) {
                 this.setState( () => {
                     return {
