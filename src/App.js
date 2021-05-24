@@ -1,3 +1,5 @@
+import React from "react";
+
 import FrontPage from "./components/front/Page";
 import ContactPage from "./components/contact/Page";
 import ProjectsPage from "./components/projects/Page";
