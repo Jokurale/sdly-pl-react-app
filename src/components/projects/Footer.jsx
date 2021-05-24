@@ -1,3 +1,4 @@
+import React from "react";
 import codeThinking from "../../svgs/code_thinking.svg";
 
 import "./Footer.scss";

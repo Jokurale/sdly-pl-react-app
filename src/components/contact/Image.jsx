@@ -1,3 +1,4 @@
+import React from "react";
 import contactImage from "../../svgs/contact-sub.svg";
 
 import "./Image.scss";

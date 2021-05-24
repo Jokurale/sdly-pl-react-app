@@ -1,26 +1,30 @@
-import "./SingleRepo.scss"
+import React from "react";
 
-import { GoRepo as RepoIcon } from 'react-icons/go'
+import "./SingleRepo.scss";
 
-export default function SingleRepo({repo}) {
-    const { full_name, html_url, language, license, description } = repo
+import { GoRepo as RepoIcon } from "react-icons/go";
 
-    let license_name = "MIT License"
+export default function SingleRepo({ repo }) {
+  const { full_name, html_url, language, license, description } = repo;
 
-    if (license !== null) {
-        license_name = license.name
-    }
+  let license_name = "MIT License";
 
-    return (
-        <div className="SingleRepo">
-            <div className="SingleRepo__Header">
-                <span className="SingleRepo__Header--decor">
-                    <RepoIcon />
-                </span>
-                 <a href={html_url}>{full_name}</a>
-            </div>
-            <div className="SingleRepo__Body">{description}</div>
-            <div className="SingleRepo__Footer">{language} | {license_name}</div>
-        </div>
-    )
+  if (license !== null) {
+    license_name = license.name;
+  }
+
+  return (
+    <div className="SingleRepo">
+      <div className="SingleRepo__Header">
+        <span className="SingleRepo__Header--decor">
+          <RepoIcon />
+        </span>
+        <a href={html_url}>{full_name}</a>
+      </div>
+      <div className="SingleRepo__Body">{description}</div>
+      <div className="SingleRepo__Footer">
+        {language} | {license_name}
+      </div>
+    </div>
+  );
 }

@@ -1,61 +1,62 @@
-import Image from "./Image"
-import Form from "./Form"
-import Header from "./Header"
-import Footer from "./Footer"
+import React from "react";
 
-import PageRefs from "../../js/PageRefs"
+import Image from "./Image";
+import Form from "./Form";
+import Header from "./Header";
+import Footer from "./Footer";
 
-import Modal from './Modal'
+import PageRefs from "../../js/PageRefs";
 
-import gsap from 'gsap'
+import Modal from "./Modal";
 
-import { createRef, useEffect } from 'react'
+import gsap from "gsap";
 
-import "./Page.scss"
+import { createRef, useEffect } from "react";
 
+import "./Page.scss";
 
-export default function Page({dispatch}) {
+export default function Page({ dispatch }) {
+  useEffect(() => {
+    // If comonent did mount, dispatch ready state to preloader handler
+    dispatch();
+  }, []);
 
-    useEffect(() => {
-        // If comonent did mount, dispatch ready state to preloader handler
-        dispatch()
-    }, [])
+  const modalRef = createRef();
 
+  function displayModal() {
+    const tl = gsap.timeline({ defaults: { ease: "power2.easeInOut" } });
 
-    const modalRef = createRef()
+    const modal = modalRef.current;
 
-    function displayModal() { 
-        const tl = gsap.timeline({defaults: {ease: 'power2.easeInOut'}})
+    tl.fromTo(modal, { autoAlpha: 0 }, { autoAlpha: 1 }).to(modal, {
+      delay: 1,
+      autoAlpha: 0,
+    });
+  }
 
-        const modal = modalRef.current
-
-        tl.fromTo(modal, {autoAlpha: 0}, {autoAlpha: 1}).to(modal, {delay: 1, autoAlpha: 0})
-    }
-
-    return (
-        <div className="Page__Contact" ref={PageRefs.getContactRef()}>
-            <div className="container">
-            <Modal forwardRef={modalRef}/>
-                <div className="row">
-                    <div className="col-12">
-                        <div className="Contact__Wrapper row">
-                            <div className="col-12">
-                                <Header />
-                            </div>
-                            <div className="col-6 d-flex justify-content-center align-items-center">
-                                <Image />
-                            </div>
-                            <div className="col-12 col-md-6">
-                                <Form modalAction={displayModal}/>
-                            </div>
-                            <div className="col-12">
-                                <Footer />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className="Page__Contact" ref={PageRefs.getContactRef()}>
+      <div className="container">
+        <Modal forwardRef={modalRef} />
+        <div className="row">
+          <div className="col-12">
+            <div className="Contact__Wrapper row">
+              <div className="col-12">
+                <Header />
+              </div>
+              <div className="col-6 d-flex justify-content-center align-items-center">
+                <Image />
+              </div>
+              <div className="col-12 col-md-6">
+                <Form modalAction={displayModal} />
+              </div>
+              <div className="col-12">
+                <Footer />
+              </div>
             </div>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
-

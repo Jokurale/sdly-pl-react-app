@@ -1,42 +1,42 @@
-import PageRefs from "../../js/PageRefs"
+import React from "react";
 
-import Header from "./Header"
-import Body from "./Body"
-import Footer from "./Footer"
+import PageRefs from "../../js/PageRefs";
 
-import "./Page.scss"
+import Header from "./Header";
+import Body from "./Body";
+import Footer from "./Footer";
 
-import { useEffect } from 'react'
+import "./Page.scss";
 
-export default function Page({dispatch}) {
+import { useEffect } from "react";
 
-    useEffect(() => {
-        // If comonent did mount, dispatch ready state to preloader handler
-        dispatch()
-    }, [])
+export default function Page({ dispatch }) {
+  useEffect(() => {
+    // If comonent did mount, dispatch ready state to preloader handler
+    dispatch();
+  }, []);
 
-    return (
-        <div className="Page__Projects" ref={PageRefs.getProjectsRef()}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <Header/>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-12">
-                        <Body/>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-12">
-                        <Footer/>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="Page__Projects" ref={PageRefs.getProjectsRef()}>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <Header />
+          </div>
         </div>
-    )
-}
 
+        <div className="row">
+          <div className="col-12">
+            <Body />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-12">
+            <Footer />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

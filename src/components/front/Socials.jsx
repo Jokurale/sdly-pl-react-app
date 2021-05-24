@@ -1,3 +1,5 @@
+import React from "react";
+
 import { ReactComponent as GithubLogo } from "../../svgs/github.svg";
 import { ReactComponent as LinkedInLogo } from "../../svgs/linkedin.svg";
 

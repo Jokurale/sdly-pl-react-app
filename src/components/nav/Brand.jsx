@@ -1,11 +1,12 @@
-import {ReactComponent as BrandLogo} from '../../svgs/logo.svg'
+import React from "react";
+import { ReactComponent as BrandLogo } from "../../svgs/logo.svg";
 
-import "./Brand.scss"
+import "./Brand.scss";
 
 export default function Brand() {
-    return (
-        <div className="Navbar__Logo">
-            <BrandLogo />
-        </div>
-    )
+  return (
+    <div className="Navbar__Logo">
+      <BrandLogo />
+    </div>
+  );
 }

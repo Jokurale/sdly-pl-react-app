@@ -1,10 +1,11 @@
-import LatestProjects from "./LatestProjects"
-import "./Body.scss"
+import React from "react";
+import LatestProjects from "./LatestProjects";
+import "./Body.scss";
 
-export default function Body() { 
-    return (
-        <div className="Projects__Body">
-            <LatestProjects />
-        </div>
-    )
+export default function Body() {
+  return (
+    <div className="Projects__Body">
+      <LatestProjects />
+    </div>
+  );
 }
