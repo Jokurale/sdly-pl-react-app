@@ -47,7 +47,7 @@ export default class Form extends Component {
     });
   }
 
-  async handleSubmit(e) {
+  async handleSubmit() {
     // *** Data validation
     for (const [_, value] of Object.entries(this.state.fields)) {
       if (
