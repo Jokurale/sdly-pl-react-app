@@ -49,7 +49,7 @@ export default class Form extends Component {
 
   async handleSubmit() {
     // *** Data validation
-    for (const [_, value] of Object.entries(this.state.fields)) {
+    for (const value of Object.values(this.state.fields)) {
       if (
         value === "" ||
         value === " " ||
