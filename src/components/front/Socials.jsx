@@ -5,7 +5,7 @@ import { ReactComponent as LinkedInLogo } from "../../svgs/linkedin.svg";
 
 import "./Socials.scss";
 
-export default function Socials(props) {
+export default function Socials() {
   return (
     <div className="Frontpage__Socials">
       <div className="Frontpage__Socials--item">

@@ -3,9 +3,11 @@ import Nav from "../nav/Nav";
 import Jumbotron from "./Jumbotron";
 import Socials from "./Socials";
 
+import PropTypes from "prop-types";
+
 import { useEffect } from "react";
 
-export default function Page({ dispatch }) {
+function Page({ dispatch }) {
   useEffect(() => {
     // If comonent did mount, dispatch ready state to preloader handler
     dispatch();
@@ -19,3 +21,9 @@ export default function Page({ dispatch }) {
     </div>
   );
 }
+
+Page.propTypes = {
+  dispatch: PropTypes.func,
+};
+
+export default Page;

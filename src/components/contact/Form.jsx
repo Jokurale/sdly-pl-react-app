@@ -5,9 +5,11 @@ import {
   AiOutlineArrowRight as ArrowRight,
 } from "react-icons/ai";
 
+import PropTypes from "prop-types";
+
 import "./Form.scss";
 
-export default class Form extends Component {
+class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -148,3 +150,9 @@ export default class Form extends Component {
     );
   }
 }
+
+Form.propTypes = {
+  modalAction: PropTypes.func,
+};
+
+export default Form;

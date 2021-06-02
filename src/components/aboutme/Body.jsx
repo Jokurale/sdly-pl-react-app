@@ -11,18 +11,18 @@ export default function AboutmeBody() {
         Young programming enthusiast. Now studying in Lublin. Half a year of
         commercial experience. <br /> Started as a backend php-based junior, now
         trying to keep up with the times by tech-stack mentioned below. <br />
-        Native polish. Advanced english speaker. German language isn't my
+        Native polish. Advanced english speaker. German language isn&apos;t my
         specialty.
       </Accordion>
 
       <Accordion title="Intrests">
         Obviosuly programming. Despite that - I play drums, at least I try not
         to get my ass kicked out of the house. Sci-fi books and topics are on
-        the second place. <br /> I'm also familiar with car mechanics and
+        the second place. <br /> I&apos;m also familiar with car mechanics and
         detailing, in some way. <br /> From time to time I like to get in touch
-        with Adobe XD and desing some sketchy things like this app's theme.{" "}
+        with Adobe XD and desing some sketchy things like this app&apos;s theme.{" "}
         <br />
-        <i>Simplicity is dominating, isn't it?</i>
+        <i>Simplicity is dominating, isn&apos;t it?</i>
       </Accordion>
 
       <Accordion title="Programming">
@@ -32,7 +32,7 @@ export default function AboutmeBody() {
       </Accordion>
 
       <Accordion title="Frontend">
-        UI/UX using Adobe's stack - Illustrator, XD and Photoshop for small
+        UI/UX using Adobe&apos;s stack - Illustrator, XD and Photoshop for small
         corrections. Mostly React via CRA. Some parts of Boostrap and Tailwind
         for minor purposes. Obviously JavaScript for app interactions among much
         more stuff. GSAP animation platform for things based on eye-catching
@@ -42,7 +42,7 @@ export default function AboutmeBody() {
       <Accordion title="Backend">
         <i>So... what to start with?</i> <br />
         Hardware, DNS and SSL configuration with ease. <br />
-        VM's based on Google Cloud Platform. <br />
+        VM&apos;s based on Google Cloud Platform. <br />
         Know how web-data flows and how potential request looks like. <br />
         Touched some compiled languages such as Rust and C++ - WebAssembly is
         coming. <br />
@@ -51,9 +51,9 @@ export default function AboutmeBody() {
         Mostly using cloud version of MongoDB for data-storage purposes. <br />
         Know how to use MySQL with PHPMyAdmin. <br />
         Minor knowledge about PostgreSQL. <br />
-        Mastering building API's - Data-exchange as well as auth. <br />
-        Haven't touched Docker yet. <br />
-        <i>I think that's all.</i>
+        Mastering building API&apos;s - Data-exchange as well as auth. <br />
+        Haven&apos;t touched Docker yet. <br />
+        <i>I think that&apos;s all.</i>
       </Accordion>
 
       <Accordion title="Actual techstack">
@@ -67,9 +67,9 @@ export default function AboutmeBody() {
         Mainly VSCode, with all sort of prettiers and linting tools. Familiar
         with PyCharm because of incoming IT mature exam. <br />
         Git &amp; GitHub. <br />
-        Often npm and composer when I'm getting lazy. <br />
+        Often npm and composer when I&apos;m getting lazy. <br />
         Some touches with JEST and Jira. <br />
-        <i>Another resolved ticket. Now's lunchtime</i>
+        <i>Another resolved ticket. Now&apos;s lunchtime</i>
       </Accordion>
 
       <Accordion title="2k21 Todo's">
@@ -82,7 +82,7 @@ export default function AboutmeBody() {
         first lines of code. <br />
         Master authorization techniques such as JWT and OAuth. <br />
         Get on well with CI/CD and other devops. <br />
-        <i>I know that's a lot. But who cares.</i>
+        <i>I know that&apos;s a lot. But who cares.</i>
       </Accordion>
       <Footer />
     </div>

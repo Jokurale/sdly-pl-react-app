@@ -2,6 +2,8 @@ import React from "react";
 
 import PageRefs from "../../js/PageRefs";
 
+import PropTypes from "prop-types";
+
 import Header from "./Header";
 import Body from "./Body";
 import Footer from "./Footer";
@@ -10,7 +12,7 @@ import "./Page.scss";
 
 import { useEffect } from "react";
 
-export default function Page({ dispatch }) {
+function Page({ dispatch }) {
   useEffect(() => {
     // If comonent did mount, dispatch ready state to preloader handler
     dispatch();
@@ -40,3 +42,9 @@ export default function Page({ dispatch }) {
     </div>
   );
 }
+
+Page.propTypes = {
+  dispatch: PropTypes.func,
+};
+
+export default Page;

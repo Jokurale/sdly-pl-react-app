@@ -4,7 +4,9 @@ import "./SingleRepo.scss";
 
 import { GoRepo as RepoIcon } from "react-icons/go";
 
-export default function SingleRepo({ repo }) {
+import PropTypes from "prop-types";
+
+function SingleRepo({ repo }) {
   const { full_name, html_url, language, license, description } = repo;
 
   let license_name = "MIT License";
@@ -28,3 +30,9 @@ export default function SingleRepo({ repo }) {
     </div>
   );
 }
+
+SingleRepo.propTypes = {
+  repo: PropTypes.any,
+};
+
+export default SingleRepo;

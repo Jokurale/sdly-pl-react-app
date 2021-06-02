@@ -20,7 +20,7 @@ export default class PreloaderHandler {
   }
 
   hidePreloader(delay = 0) {
-    if (!this.ref) throw ReferenceError("Preloader reference hasn't been set.");
+    if (!this.ref) throw Error("Preloader reference hasn't been set.");
 
     if (!enabled) delay = 0;
 

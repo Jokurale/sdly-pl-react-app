@@ -1,11 +1,13 @@
 import React from "react";
 import "./Accordion.scss";
 
+import PropTypes from "prop-types";
+
 import { RiArrowDropUpLine as ArrowPointer } from "react-icons/ri";
 
 import { useState, useEffect, useRef } from "react";
 
-export default function AboutmeAccordion({ title, children }) {
+function AboutmeAccordion({ title, children }) {
   const [toogled, setToogle] = useState(false);
 
   const accordionBodyRef = useRef();
@@ -39,3 +41,10 @@ export default function AboutmeAccordion({ title, children }) {
     </div>
   );
 }
+
+AboutmeAccordion.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.node,
+};
+
+export default AboutmeAccordion;
