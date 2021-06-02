@@ -108,7 +108,7 @@ class Form extends Component {
               name="name"
               placeholder="Name"
               value={this.state.fields.name}
-              onChange={(e) => this.handleChange(e)}
+              onChange={this.handleChange}
             />
           </div>
           <div className="Form__Group">

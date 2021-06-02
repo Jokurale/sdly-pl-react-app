@@ -53,15 +53,13 @@ export default class LatestCommits extends Component {
       );
     }
 
-    if (this.state.error) {
-      return (
-        <div className="LatestProjects">
-          <div className="LatestProjects__Error">
-            App could not retrive github repos <br />
-            :(
-          </div>
+    return (
+      <div className="LatestProjects">
+        <div className="LatestProjects__Error">
+          App could not retrive github repos <br />
+          :(
         </div>
-      );
-    }
+      </div>
+    );
   }
 }

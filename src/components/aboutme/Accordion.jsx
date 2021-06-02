@@ -17,14 +17,13 @@ function AboutmeAccordion({ title, children }) {
     accordionArrowRef.current.classList.toggle("rotate");
   }, [toogled]);
 
+  this.handleClick = () => {
+    setToogle(!toogled);
+  };
+
   return (
     <div className="Aboutme__Accordion">
-      <div
-        className="Aboutme__AccordionHeader"
-        onClick={() => {
-          setToogle(!toogled);
-        }}
-      >
+      <div className="Aboutme__AccordionHeader" onClick={this.handleClick}>
         <button>{title}</button>
         <div
           className="Aboutme__AccordionHeaderDropDown"
