@@ -4,7 +4,7 @@ import ActionManager from "../../js/ActionManager";
 import React from "react";
 
 export default function Items() {
-  this.handleClick = () => {
+  const handleClick = () => {
     ActionManager.showPage("contact");
   };
 
@@ -13,11 +13,7 @@ export default function Items() {
   return (
     <div className="Navbar__Items d-flex justify-content-between">
       {items.map((title) => (
-        <h3
-          key={title}
-          className="Navbar__Items--item"
-          onClick={this.handleClick}
-        >
+        <h3 key={title} className="Navbar__Items--item" onClick={handleClick}>
           {title}
         </h3>
       ))}

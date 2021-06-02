@@ -20,6 +20,9 @@ class Form extends Component {
       },
       error: false,
     };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   async postMessage(data = {}) {

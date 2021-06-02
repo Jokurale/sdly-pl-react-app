@@ -5,7 +5,7 @@ import React from "react";
 import Xbtn from "../../svgs/x-close.svg";
 
 export default function Header() {
-  this.handleClick = () => {
+  const handleClick = () => {
     ActionManager.hidePage("contact");
   };
 
@@ -14,7 +14,7 @@ export default function Header() {
       <img
         src={Xbtn}
         alt="Close this page"
-        onClick={this.handleClick}
+        onClick={handleClick}
         className="close-btn"
       />
       <h3>Leave a message</h3>

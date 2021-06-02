@@ -5,13 +5,13 @@ import React from "react";
 import Xbtn from "../../svgs/x-close.svg";
 
 export default function Header() {
-  this.handleClick = () => {
+  const handleClick = () => {
     ActionManager.hidePage("aboutme");
   };
 
   return (
     <div className="Aboutme__Header">
-      <img src={Xbtn} className="close-btn" alt="" onClick={this.handleClick} />
+      <img src={Xbtn} className="close-btn" alt="" onClick={handleClick} />
       <h3>About me</h3>
     </div>
   );
