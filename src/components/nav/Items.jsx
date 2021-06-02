@@ -8,14 +8,19 @@ export default function Items() {
     ActionManager.showPage("contact");
   };
 
+  const items = ["Contact", "Projects"];
+
   return (
     <div className="Navbar__Items d-flex justify-content-between">
-      <h3 className="Navbar__Items--item" onClick={this.handleClick}>
-        Contact
-      </h3>
-      <h3 className="Navbar__Items--item" onClick={this.handleClick}>
-        Projects
-      </h3>
+      {items.map((title) => (
+        <h3
+          key={title}
+          className="Navbar__Items--item"
+          onClick={this.handleClick}
+        >
+          {title}
+        </h3>
+      ))}
     </div>
   );
 }
