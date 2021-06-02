@@ -121,7 +121,7 @@ class Form extends Component {
               name="email"
               placeholder="Email"
               value={this.state.fields.email}
-              onChange={(e) => this.handleChange(e)}
+              onChange={this.handleChange}
             />
           </div>
           <div className="Form__Group">
@@ -132,13 +132,13 @@ class Form extends Component {
               cols="30"
               rows="10"
               value={this.state.fields.message}
-              onChange={(e) => this.handleChange(e)}
+              onChange={this.handleChange}
             ></textarea>
           </div>
           <button
             className="Form__Button"
             type="button"
-            onClick={(e) => this.handleSubmit(e)}
+            onClick={this.handleSubmit}
           >
             Submit <ArrowRight />
           </button>

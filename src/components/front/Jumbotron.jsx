@@ -6,18 +6,16 @@ import { ReactComponent as Person } from "../../svgs/person.svg";
 import React from "react";
 
 export default function Jumbotron() {
+  this.handleClick = () => {
+    ActionManager.showPage("aboutme");
+  };
   return (
     <div className="Jumbotron">
       <div className="row">
         <div className="Jumbotron__Left col-md-6">
           <h1>Michał Podsiadły</h1>
           <h4>JUNIOR FULL-STACK DEVELOPER</h4>
-          <button
-            className="Jumbotron__Left--btn"
-            onClick={() => {
-              ActionManager.showPage("aboutme");
-            }}
-          >
+          <button className="Jumbotron__Left--btn" onClick={this.handleClick}>
             About me
           </button>
         </div>
