@@ -29,6 +29,7 @@ function SingleRepo({ repo }) {
   );
 }
 
+// YES, I AM LAZY
 SingleRepo.propTypes = {
   repo: PropTypes.any,
 };
