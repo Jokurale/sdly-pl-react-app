@@ -1,7 +1,7 @@
+import "./Footer.scss";
+
 import React from "react";
 import aboutmeCoffeeBreak from "../../svgs/aboutme-coffee-break.svg";
-
-import "./Footer.scss";
 
 export default function Footer() {
   return (

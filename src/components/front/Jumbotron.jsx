@@ -1,9 +1,9 @@
-import React from "react";
-import { ReactComponent as Person } from "../../svgs/person.svg";
-import { ReactComponent as Desk } from "../../svgs/desk.svg";
-
 import "./Jumbotron.scss";
+
 import ActionManager from "../../js/ActionManager";
+import { ReactComponent as Desk } from "../../svgs/desk.svg";
+import { ReactComponent as Person } from "../../svgs/person.svg";
+import React from "react";
 
 export default function Jumbotron() {
   return (

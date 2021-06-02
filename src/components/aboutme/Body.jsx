@@ -1,8 +1,8 @@
-import React from "react";
-import Footer from "./Footer";
-import Accordion from "./Accordion";
-
 import "./Body.scss";
+
+import Accordion from "./Accordion";
+import Footer from "./Footer";
+import React from "react";
 
 export default function AboutmeBody() {
   return (

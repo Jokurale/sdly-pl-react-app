@@ -1,6 +1,7 @@
-import React from "react";
 import "./Items.scss";
+
 import ActionManager from "../../js/ActionManager";
+import React from "react";
 
 export default function Items() {
   return (

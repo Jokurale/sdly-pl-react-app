@@ -1,10 +1,8 @@
-import React from "react";
-import Nav from "../nav/Nav";
 import Jumbotron from "./Jumbotron";
-import Socials from "./Socials";
-
+import Nav from "../nav/Nav";
 import PropTypes from "prop-types";
-
+import React from "react";
+import Socials from "./Socials";
 import { useEffect } from "react";
 
 function Page({ dispatch }) {

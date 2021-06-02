@@ -1,8 +1,7 @@
-import React from "react";
+import "./Modal.scss";
 
 import PropTypes from "prop-types";
-
-import "./Modal.scss";
+import React from "react";
 
 function Modal({ forwardRef }) {
   return (

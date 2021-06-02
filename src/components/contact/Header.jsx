@@ -1,9 +1,8 @@
-import React from "react";
-import Xbtn from "../../svgs/x-close.svg";
-
 import "./Header.scss";
 
 import ActionManager from "../../js/ActionManager";
+import React from "react";
+import Xbtn from "../../svgs/x-close.svg";
 
 export default function Header() {
   return (

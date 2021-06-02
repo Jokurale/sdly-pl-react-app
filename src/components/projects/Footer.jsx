@@ -1,7 +1,7 @@
+import "./Footer.scss";
+
 import React from "react";
 import codeThinking from "../../svgs/code_thinking.svg";
-
-import "./Footer.scss";
 
 export default function Footer() {
   return (

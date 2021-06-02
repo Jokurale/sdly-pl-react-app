@@ -1,15 +1,11 @@
-import React from "react";
-
-import PageRefs from "../../js/PageRefs";
-
-import PropTypes from "prop-types";
-
-import Header from "./Header";
-import Body from "./Body";
-import Footer from "./Footer";
-
 import "./Page.scss";
 
+import Body from "./Body";
+import Footer from "./Footer";
+import Header from "./Header";
+import PageRefs from "../../js/PageRefs";
+import PropTypes from "prop-types";
+import React from "react";
 import { useEffect } from "react";
 
 function Page({ dispatch }) {

@@ -1,8 +1,8 @@
-import React from "react";
-import preloaderSvg from "../../svgs/preloader_logo.svg";
 import "./Preloader.scss";
 
 import PropTypes from "prop-types";
+import React from "react";
+import preloaderSvg from "../../svgs/preloader_logo.svg";
 
 function Preloader({ forwardRef }) {
   return (

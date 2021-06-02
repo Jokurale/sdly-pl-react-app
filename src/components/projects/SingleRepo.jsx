@@ -1,10 +1,8 @@
-import React from "react";
-
 import "./SingleRepo.scss";
 
-import { GoRepo as RepoIcon } from "react-icons/go";
-
 import PropTypes from "prop-types";
+import React from "react";
+import { GoRepo as RepoIcon } from "react-icons/go";
 
 function SingleRepo({ repo }) {
   const { full_name, html_url, language, license, description } = repo;

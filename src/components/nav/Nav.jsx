@@ -1,8 +1,8 @@
-import React from "react";
+import "./Nav.scss";
+
 import Brand from "./Brand";
 import Items from "./Items";
-
-import "./Nav.scss";
+import React from "react";
 
 export default function Nav() {
   return (

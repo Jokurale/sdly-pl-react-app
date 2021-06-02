@@ -1,9 +1,8 @@
-import React from "react";
+import "./Socials.scss";
 
 import { ReactComponent as GithubLogo } from "../../svgs/github.svg";
 import { ReactComponent as LinkedInLogo } from "../../svgs/linkedin.svg";
-
-import "./Socials.scss";
+import React from "react";
 
 export default function Socials() {
   return (

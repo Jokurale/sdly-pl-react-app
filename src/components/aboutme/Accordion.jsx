@@ -1,11 +1,10 @@
-import React from "react";
 import "./Accordion.scss";
 
-import PropTypes from "prop-types";
+import { useEffect, useRef, useState } from "react";
 
 import { RiArrowDropUpLine as ArrowPointer } from "react-icons/ri";
-
-import { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
+import React from "react";
 
 function AboutmeAccordion({ title, children }) {
   const [toogled, setToogle] = useState(false);

@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import "./Form.scss";
+
 import {
-  AiOutlineUser as UserIcon,
-  AiOutlineMail as MailIcon,
   AiOutlineArrowRight as ArrowRight,
+  AiOutlineMail as MailIcon,
+  AiOutlineUser as UserIcon,
 } from "react-icons/ai";
+import React, { Component } from "react";
 
 import PropTypes from "prop-types";
-
-import "./Form.scss";
 
 class Form extends Component {
   constructor(props) {

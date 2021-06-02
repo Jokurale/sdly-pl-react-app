@@ -1,21 +1,16 @@
-import React from "react";
-
-import Image from "./Image";
-import Form from "./Form";
-import Header from "./Header";
-import Footer from "./Footer";
-
-import PropTypes from "prop-types";
-
-import PageRefs from "../../js/PageRefs";
-
-import Modal from "./Modal";
-
-import gsap from "gsap";
+import "./Page.scss";
 
 import { createRef, useEffect } from "react";
 
-import "./Page.scss";
+import Footer from "./Footer";
+import Form from "./Form";
+import Header from "./Header";
+import Image from "./Image";
+import Modal from "./Modal";
+import PageRefs from "../../js/PageRefs";
+import PropTypes from "prop-types";
+import React from "react";
+import gsap from "gsap";
 
 function Page({ dispatch }) {
   useEffect(() => {

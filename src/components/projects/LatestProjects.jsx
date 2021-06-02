@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Loader from "react-spinners/SyncLoader";
-
-import SingleRepo from "./SingleRepo";
-
 import "./LatestProjects.scss";
+
+import React, { Component } from "react";
+
+import Loader from "react-spinners/SyncLoader";
+import SingleRepo from "./SingleRepo";
 
 export default class LatestCommits extends Component {
   constructor() {
