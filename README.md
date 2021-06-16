@@ -12,7 +12,7 @@
 > Form, included within react components depends on particular endpoint (https://sdly.pl/msg) <br>
 > Message service is not included by default and should be written/implemented as matters of personal preference
 
-## Installing 📜
+## Installation 📜
 
 ```
 yarn install
